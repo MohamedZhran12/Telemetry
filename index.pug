@@ -1,0 +1,214 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // for responsive mode
+    title Standard
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/animate.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    script(src='https://kit.fontawesome.com/3eda1035dc.js')
+    //if lt IE 9
+      script(src='js/html5shiv.min.js')
+      script(src='js/respond.min.js')
+  body
+    //- Start Navbar
+    nav.navbar.navbar-expand-lg.navbar-light.fixed-top
+      a.navbar-brand(href='#') Telemetry #[span.d-md-inline-block.d-none By MZ]
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+        span &equiv;
+      #navbarNavDropdown.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Home
+              span.sr-only (current)
+          li.nav-item.dropdown
+            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | #[i.fas.fa-chevron-down] Dropdown
+            .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+              a.dropdown-item(href='#') Option One
+              a.dropdown-item(href='#') Option Two
+              a.dropdown-item(href='#') Option Three
+              a.dropdown-item(href='#') Option Four
+          li.nav-item
+            a.nav-link(href='#') Generic
+          li.nav-item
+            a.nav-link(href='#') Elements
+    //- End Navbar
+
+    //- Start Header
+    header.text-center
+      .container
+        i.fas.fa-laptop
+        h1 Ipsum dolor sit amet feugiat #[br.d-md-block.d-none] et veroeros adipiscing
+        hr
+        a(href='#').text-uppercase get started
+    //- End Header
+
+    //- Start Section 1
+    section.sec1
+      .container
+        .row
+          .col-lg-5.col-12.order-lg-0.order-1
+            img(src='images/pic02.jpg')
+          .col-lg-7.col-12.order-lg-1.order-0
+            h2.h1 Adipiscing ornare risus morbi est est blandi magna vel euismod tempus
+            .container
+              .row.features
+                .col-sm-6
+                  i.far.fa-gem
+                  span Sed veroeros
+                  h3 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.
+                .col-sm-6
+                  i.far.fa-file-word
+                  span Magna etiam
+                  h3 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.
+                .col-sm-6
+                  i.far.fa-clone
+                  span Nulla consequat
+                  h3 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.
+                .col-sm-6
+                  i.far.fa-envelope
+                  span Euismod morbi
+                  h3 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.
+    //- End Section 1
+
+    //- Start Section 2
+    .sec2.text-center
+      .container
+        .row
+          .col-lg-3.col-sm-6
+            h4 128
+            span Sed magna
+            p Lorem ipsum dolor nulla feugiat adipiscing.
+          .col-lg-3.col-sm-6
+            h4 56
+            span Etiam dolor
+            p Lorem ipsum dolor nulla feugiat adipiscing.
+          .col-lg-3.col-sm-6
+            h4 367
+            span Nullam amet
+            p Lorem ipsum dolor nulla feugiat adipiscing.
+          .col-lg-3.col-sm-6
+            h4 145
+            span Sit euismod
+            p Lorem ipsum dolor nulla feugiat adipiscing.
+    //- End Section 2
+
+    //- Start Section 3
+    .sec3
+      .container
+          ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item
+              a#home-tab.nav-link.active(data-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='true') Home
+            li.nav-item
+              a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') Profile
+            li.nav-item
+              a#contact-tab.nav-link(data-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') Contact
+          .row.tabs
+            .col-lg-6.order-lg-0.order-1
+              #myTabContent.tab-content
+                #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab')
+                  h3 Lorem ipsum dolor sit magna feugiat etiam sed dolor
+                  p Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.
+                  a(href='#').text-uppercase learn more
+                #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab')
+                  h3 Ipsum lorem accumsan sed nullam feugiat veroeros
+                  p Veritatis, accusantium, nemo. Officia neque explicabo nihil! Sunt vero reprehenderit, necessitatibus atque, enim autem animi illum quaerat at, corporis dolore ipsam. Voluptatem culpa sapiente sed veroeros.
+                  a(href='#').text-uppercase learn more
+                #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
+                  h3 Adipiscing sed impedit volutpat magna cursus lorem
+                  p Perspiciatis saepe, mollitia itaque magna etiam dolor sit amet. Sed rerum porro sint iure illo accusantium in amet totam, est. Ipsa nobis ad optio impedit quidem inventore libero, aperiam, nesciunt dolor sit amet.
+                  a(href='#').text-uppercase learn more
+            .col-lg-6.text-center.order-lg-0.order-0
+              img(src='images/pic05.jpg')
+    //- End Section 3
+
+    //- Start Section 4
+    .sec4.text-center
+      .container-fluid
+        .row
+          .col-lg-6
+            i.fas.fa-quote-left
+            h2 "Sed ultrices consequat dolor nulla #[br] fringilla dignissim"
+            h5 Jane Doe
+            span Ipsum dolor nullam
+          .col-lg-6
+            i.fas.fa-quote-left
+            h2 "Sed ultrices consequat dolor nulla #[br] fringilla dignissim"
+            h5 John Doe
+            span Ipsum dolor nullam
+    //- End Section 4
+
+    //- Start Section 5
+    .sec5
+      .container
+        .row
+          .col-lg-6
+            h2 Feugiat lorem ipsum dolor velit amet dolor dignissim pharetra
+            img(src='images/pic06.jpg')
+            p Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.
+            a(href='#').text-uppercase learn more
+          .col-lg-5.ml-lg-auto
+            h4 HTML5
+            .progress
+              .progress-bar(role='progressbar' style='width: 56%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 56%
+            h4 CSS 3
+            .progress
+              .progress-bar(role='progressbar' style='width: 39%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 39%
+            h4 PHP
+            .progress
+              .progress-bar(role='progressbar' style='width: 72%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 72%
+            h4 Javascript
+            .progress
+              .progress-bar(role='progressbar' style='width: 90%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 90%
+            h4 MySql
+            .progress
+              .progress-bar(role='progressbar' style='width: 64%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 64%
+    //- End Section 5
+
+    //- Start Footer
+    footer
+      .container
+        .row
+          .col-lg-4
+            h4 Contact
+            ul.list-unstyled
+              li
+                i.fab.fa-facebook-f
+                | 234 Fictional Street #5432 Nashville
+              li
+                i.fas.fa-phone
+                | (000) 000-0000
+              li
+                i.fas.fa-envelope
+                | info@untitled.tld
+              li
+                a(href='#')
+                  i.fab.fa-facebook-f
+                a(href='#')
+                  i.fab.fa-twitter
+                a(href='#')
+                  i.fab.fa-instagram
+                a(href='#')
+                  i.fab.fa-github
+                a(href='#')
+                  i.fab.fa-linkedin-in
+          .col-lg-8
+            h4 Email Us
+            form.form-inline
+              input(type='text' placeholder='Name')
+              input(type='email' placeholder='Email')
+              textarea(placeholder='Message')
+              input(type='submit' value='SEND MESSAGE')
+
+
+          hr
+          div.copyright &copy; MohamedZhran. All rights reserved.
+    //- End Footer
+    script(src='js/jquery-3.3.1.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/jquery.fittext.js')
+    script(src='js/main.js')
